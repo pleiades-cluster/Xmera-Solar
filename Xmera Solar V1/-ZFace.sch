@@ -1,0 +1,1360 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Xmera Bottom Cap"
+Date "2022-10-30"
+Rev "V1"
+Comp "CPP BroncoSpace"
+Comment1 "and Related Components"
+Comment2 "Embedded Magnetorquer Coil, I2C Multiplexer,"
+Comment3 "Includes: Solar Cells, Temperature and Light Sensors, "
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	9000 6350 10400 6350
+$Comp
+L power:GND #PWR0109
+U 1 1 6148E3DD
+P 10400 6350
+F 0 "#PWR0109" H 10400 6100 50  0001 C CNN
+F 1 "GND" V 10405 6222 50  0000 R CNN
+F 2 "" H 10400 6350 50  0001 C CNN
+F 3 "" H 10400 6350 50  0001 C CNN
+	1    10400 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D7
+U 1 1 61067859
+P 9750 4450
+F 0 "D7" H 9750 4300 50  0000 C CNN
+F 1 "CDBA240LL-HF" H 10000 4200 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 9750 4450 50  0001 C CNN
+F 3 "~" H 9750 4450 50  0001 C CNN
+	1    9750 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Solar_Cell SC4
+U 1 1 61285A7B
+P 9400 5000
+F 0 "SC4" H 9508 5046 50  0000 L CNN
+F 1 "KXOB081K06TF" H 9508 4955 50  0000 L CNN
+F 2 "SolarPanelBoards:KXOB201K04F-TR" V 9400 5060 50  0001 C CNN
+F 3 "~" V 9400 5060 50  0001 C CNN
+	1    9400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 61455D66
+P 8450 4950
+F 0 "D1" V 8450 5100 50  0000 C CNN
+F 1 "CDBA240LL-HF" V 8550 5600 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 8450 4950 50  0001 C CNN
+F 3 "~" H 8450 4950 50  0001 C CNN
+	1    8450 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Solar_Cell SC1
+U 1 1 6143BD42
+P 7550 5000
+F 0 "SC1" H 7658 5046 50  0000 L CNN
+F 1 "KXOB081K06TF" H 7658 4955 50  0000 L CNN
+F 2 "SolarPanelBoards:KXOB201K04F-TR" V 7550 5060 50  0001 C CNN
+F 3 "~" V 7550 5060 50  0001 C CNN
+	1    7550 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 4450 2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	7550 4700 7550 4800
+$Comp
+L Device:Solar_Cell SC2
+U 1 1 612849A3
+P 7550 5450
+F 0 "SC2" H 7658 5496 50  0000 L CNN
+F 1 "KXOB081K06TF" H 7658 5405 50  0000 L CNN
+F 2 "SolarPanelBoards:KXOB201K04F-TR" V 7550 5510 50  0001 C CNN
+F 3 "~" V 7550 5510 50  0001 C CNN
+	1    7550 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6100 7550 6000
+Wire Wire Line
+	8950 4450 9600 4450
+Wire Wire Line
+	8950 4700 8950 4450
+$Comp
+L Device:Solar_Cell SC5
+U 1 1 62735AFD
+P 9400 5500
+F 0 "SC5" H 9508 5546 50  0000 L CNN
+F 1 "KXOB081K06TF" H 9508 5455 50  0000 L CNN
+F 2 "SolarPanelBoards:KXOB201K04F-TR" V 9400 5560 50  0001 C CNN
+F 3 "~" V 9400 5560 50  0001 C CNN
+	1    9400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 4800 8450 4700
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 627A5498
+P 7400 2950
+F 0 "J11" H 7318 2725 50  0000 C CNN
+F 1 "Conn_01x01" H 7318 2816 50  0000 C CNN
+F 2 "SolarPanelBoards:MountingHoles" H 7400 2950 50  0001 C CNN
+F 3 "~" H 7400 2950 50  0001 C CNN
+	1    7400 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 627A5849
+P 7400 3300
+F 0 "J12" H 7318 3075 50  0000 C CNN
+F 1 "Conn_01x01" H 7318 3166 50  0000 C CNN
+F 2 "SolarPanelBoards:MountingHoles" H 7400 3300 50  0001 C CNN
+F 3 "~" H 7400 3300 50  0001 C CNN
+	1    7400 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 627A5C0A
+P 7400 3650
+F 0 "J13" H 7318 3425 50  0000 C CNN
+F 1 "Conn_01x01" H 7318 3516 50  0000 C CNN
+F 2 "SolarPanelBoards:MountingHoles" H 7400 3650 50  0001 C CNN
+F 3 "~" H 7400 3650 50  0001 C CNN
+	1    7400 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 627A649F
+P 7400 4000
+F 0 "J14" H 7318 3775 50  0000 C CNN
+F 1 "Conn_01x01" H 7318 3866 50  0000 C CNN
+F 2 "SolarPanelBoards:MountingHoles" H 7400 4000 50  0001 C CNN
+F 3 "~" H 7400 4000 50  0001 C CNN
+	1    7400 4000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7600 4000
+NoConn ~ 7600 3650
+NoConn ~ 7600 3300
+NoConn ~ 7600 2950
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 62A02DC8
+P 7950 3300
+F 0 "J9" H 7868 3075 50  0000 C CNN
+F 1 "Conn_01x01" H 7868 3166 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7950 3300 50  0001 C CNN
+F 3 "~" H 7950 3300 50  0001 C CNN
+	1    7950 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 62A02DCE
+P 7950 2950
+F 0 "J10" H 7868 2725 50  0000 C CNN
+F 1 "Conn_01x01" H 7868 2816 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7950 2950 50  0001 C CNN
+F 3 "~" H 7950 2950 50  0001 C CNN
+	1    7950 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 62A04B5A
+P 8500 3300
+F 0 "#FLG0102" H 8500 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 8500 3473 50  0000 C CNN
+F 2 "" H 8500 3300 50  0001 C CNN
+F 3 "~" H 8500 3300 50  0001 C CNN
+	1    8500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3300 8500 3300
+Text GLabel 8300 2950 2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	8150 2950 8300 2950
+$Comp
+L Device:Solar_Cell SC3
+U 1 1 6128524D
+P 7550 5900
+F 0 "SC3" H 7658 5946 50  0000 L CNN
+F 1 "KXOB081K06TF" H 7658 5855 50  0000 L CNN
+F 2 "SolarPanelBoards:KXOB201K04F-TR" V 7550 5960 50  0001 C CNN
+F 3 "~" V 7550 5960 50  0001 C CNN
+	1    7550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D2
+U 1 1 634050C2
+P 8450 5400
+F 0 "D2" V 8450 5550 50  0000 C CNN
+F 1 "CDBA240LL-HF" V 8550 6050 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 8450 5400 50  0001 C CNN
+F 3 "~" H 8450 5400 50  0001 C CNN
+	1    8450 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D3
+U 1 1 634050CE
+P 8450 5800
+F 0 "D3" V 8450 5950 50  0000 C CNN
+F 1 "CDBA240LL-HF" V 8550 6450 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 8450 5800 50  0001 C CNN
+F 3 "~" H 8450 5800 50  0001 C CNN
+	1    8450 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 4700 9400 4800
+Wire Wire Line
+	7550 4700 8450 4700
+Wire Wire Line
+	7550 6100 8450 6100
+Connection ~ 8450 4700
+Connection ~ 8450 6100
+Connection ~ 8950 4700
+Wire Wire Line
+	8950 4700 9400 4700
+Wire Wire Line
+	8450 4700 8950 4700
+Wire Wire Line
+	8450 6100 9000 6100
+$Comp
+L Sensor_Temperature:MCP9808_DFN U2
+U 1 1 6341A4EF
+P 4850 3500
+F 0 "U2" H 5294 3546 50  0000 L CNN
+F 1 "MCP9808_DFN" H 5294 3455 50  0000 L CNN
+F 2 "SolarPanelBoards:MCP9808-NoLeadPackage" H 4850 3500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP9808-0.5C-Maximum-Accuracy-Digital-Temperature-Sensor-Data-Sheet-DS20005095B.pdf" H 4600 3950 50  0001 C CNN
+	1    4850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3300 8650 3450
+$Comp
+L power:GND #PWR0108
+U 1 1 62A04B53
+P 8650 3450
+F 0 "#PWR0108" H 8650 3200 50  0001 C CNN
+F 1 "GND" H 8655 3277 50  0000 C CNN
+F 2 "" H 8650 3450 50  0001 C CNN
+F 3 "" H 8650 3450 50  0001 C CNN
+	1    8650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1350 5200 1300
+Wire Wire Line
+	4950 1350 5200 1350
+Wire Wire Line
+	4950 1250 4950 1350
+Wire Wire Line
+	5250 1250 4950 1250
+Wire Wire Line
+	5250 1400 5250 1250
+Wire Wire Line
+	4900 1400 5250 1400
+Wire Wire Line
+	4900 1200 4900 1400
+Wire Wire Line
+	5300 1450 5300 1200
+Wire Wire Line
+	4850 1450 5300 1450
+Wire Wire Line
+	4850 1150 4850 1450
+Wire Wire Line
+	5350 1150 4850 1150
+Wire Wire Line
+	5350 1500 5350 1150
+Wire Wire Line
+	4800 1500 5350 1500
+Wire Wire Line
+	4800 1100 4800 1500
+Wire Wire Line
+	5400 1550 5400 1100
+Wire Wire Line
+	4750 1550 5400 1550
+Wire Wire Line
+	4750 1050 4750 1550
+Wire Wire Line
+	5300 1200 4900 1200
+Wire Wire Line
+	5400 1100 4800 1100
+Wire Wire Line
+	4750 1050 5000 1050
+Wire Wire Line
+	5000 1050 5000 1000
+Wire Wire Line
+	4250 1000 5000 1000
+Wire Wire Line
+	5100 1000 5100 1300
+Wire Wire Line
+	5100 1300 5200 1300
+Wire Wire Line
+	5100 1000 5850 1000
+Wire Wire Line
+	8150 3300 8500 3300
+Connection ~ 8500 3300
+$Comp
+L ExtraComponents:APDS-9960 U1
+U 1 1 6341951B
+P 2400 3400
+F 0 "U1" H 2250 3000 50  0000 R CNN
+F 1 "APDS-9960" H 2250 2900 50  0000 R BNN
+F 2 "SolarPanelBoards:APDS-9960" H 2300 3850 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-2315EN" H 2100 3750 50  0001 C CNN
+	1    2400 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 2750 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	2800 3300 2950 3300
+Wire Wire Line
+	2950 3300 2950 3400
+Wire Wire Line
+	2950 3400 2800 3400
+Wire Wire Line
+	2800 3500 2950 3500
+Wire Wire Line
+	2950 3500 2950 3600
+Wire Wire Line
+	2950 3500 3100 3500
+Connection ~ 2950 3500
+Text GLabel 3100 3500 2    50   Input ~ 0
+3V3
+$Comp
+L Device:C C1
+U 1 1 6350237E
+P 2700 2950
+F 0 "C1" V 2952 2950 50  0000 C CNN
+F 1 "1uF" V 2861 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2738 2800 50  0001 C CNN
+F 3 "~" H 2700 2950 50  0001 C CNN
+	1    2700 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 635035FF
+P 2950 3750
+F 0 "C2" H 2835 3704 50  0000 R CNN
+F 1 "1uF" H 2835 3795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 3600 50  0001 C CNN
+F 3 "~" H 2950 3750 50  0001 C CNN
+	1    2950 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 2750 2400 2950
+Wire Wire Line
+	2400 2950 2550 2950
+Connection ~ 2400 2950
+Wire Wire Line
+	2400 2950 2400 3000
+Wire Wire Line
+	2850 2950 3050 2950
+Wire Wire Line
+	3050 2950 3050 3100
+Wire Wire Line
+	2950 3900 2950 4000
+$Comp
+L power:GND #PWR0106
+U 1 1 635104D9
+P 2950 4000
+F 0 "#PWR0106" H 2950 3750 50  0001 C CNN
+F 1 "GND" H 2955 3827 50  0000 C CNN
+F 2 "" H 2950 4000 50  0001 C CNN
+F 3 "" H 2950 4000 50  0001 C CNN
+	1    2950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 635128DB
+P 3050 3100
+F 0 "#PWR0107" H 3050 2850 50  0001 C CNN
+F 1 "GND" H 3055 2927 50  0000 C CNN
+F 2 "" H 3050 3100 50  0001 C CNN
+F 3 "" H 3050 3100 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 6351493D
+P 2400 4000
+F 0 "#PWR0110" H 2400 3750 50  0001 C CNN
+F 1 "GND" H 2405 3827 50  0000 C CNN
+F 2 "" H 2400 4000 50  0001 C CNN
+F 3 "" H 2400 4000 50  0001 C CNN
+	1    2400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3800 2400 4000
+Text GLabel 1750 3400 0    50   Input ~ 0
+SCL5
+Text GLabel 1750 3500 0    50   Input ~ 0
+SDA5
+NoConn ~ 2000 3300
+Text GLabel 4050 3300 0    50   Input ~ 0
+SCL5
+Text GLabel 4050 3200 0    50   Input ~ 0
+SDA5
+$Comp
+L power:GND #PWR0111
+U 1 1 63570F82
+P 4850 4200
+F 0 "#PWR0111" H 4850 3950 50  0001 C CNN
+F 1 "GND" H 4855 4027 50  0000 C CNN
+F 2 "" H 4850 4200 50  0001 C CNN
+F 3 "" H 4850 4200 50  0001 C CNN
+	1    4850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4000 4850 4100
+$Comp
+L power:GND #PWR0112
+U 1 1 63573E64
+P 4350 4000
+F 0 "#PWR0112" H 4350 3750 50  0001 C CNN
+F 1 "GND" H 4355 3827 50  0000 C CNN
+F 2 "" H 4350 4000 50  0001 C CNN
+F 3 "" H 4350 4000 50  0001 C CNN
+	1    4350 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3600 4350 3600
+Wire Wire Line
+	4350 3600 4350 3700
+Wire Wire Line
+	4450 3700 4350 3700
+Connection ~ 4350 3700
+Wire Wire Line
+	4350 3700 4350 3800
+Wire Wire Line
+	4450 3800 4350 3800
+Connection ~ 4350 3800
+Wire Wire Line
+	4350 3800 4350 4000
+Wire Wire Line
+	4950 4000 4950 4100
+Wire Wire Line
+	4950 4100 4850 4100
+Connection ~ 4850 4100
+Wire Wire Line
+	4850 4100 4850 4200
+Text GLabel 4850 2650 1    50   Input ~ 0
+3V3
+$Comp
+L Device:C C3
+U 1 1 635893A8
+P 5150 2850
+F 0 "C3" V 5402 2850 50  0000 C CNN
+F 1 "1uF" V 5311 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5188 2700 50  0001 C CNN
+F 3 "~" H 5150 2850 50  0001 C CNN
+	1    5150 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 2650 4850 2850
+Wire Wire Line
+	4850 2850 5000 2850
+Connection ~ 4850 2850
+Wire Wire Line
+	5300 2850 5500 2850
+Wire Wire Line
+	5500 2850 5500 3000
+Wire Wire Line
+	4850 2850 4850 3000
+$Comp
+L power:GND #PWR0113
+U 1 1 63591367
+P 5500 3000
+F 0 "#PWR0113" H 5500 2750 50  0001 C CNN
+F 1 "GND" H 5505 2827 50  0000 C CNN
+F 2 "" H 5500 3000 50  0001 C CNN
+F 3 "" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 3500
+Wire Wire Line
+	1750 1550 1750 1400
+Text GLabel 1750 1000 1    50   Input ~ 0
+3V3
+$Comp
+L Device:R_US R1
+U 1 1 636325A6
+P 1750 1250
+F 0 "R1" H 1818 1296 50  0000 L CNN
+F 1 "10-kOhm" H 1818 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1790 1240 50  0001 C CNN
+F 3 "~" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 63636A9F
+P 2300 1250
+F 0 "R2" H 2368 1296 50  0000 L CNN
+F 1 "10-kOhm" H 2368 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2340 1240 50  0001 C CNN
+F 3 "~" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 1000 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	2300 1100 2300 1000
+Wire Wire Line
+	1750 3400 2000 3400
+Text GLabel 1750 1550 3    50   Input ~ 0
+SCL
+Text GLabel 2300 1550 3    50   Input ~ 0
+SDA
+Wire Wire Line
+	1750 3500 2000 3500
+Wire Wire Line
+	1750 1100 1750 1000
+Wire Wire Line
+	4050 3200 4450 3200
+Wire Wire Line
+	4050 3300 4450 3300
+Wire Wire Line
+	2300 1400 2300 1550
+Wire Wire Line
+	9900 4450 10400 4450
+$Comp
+L Device:Solar_Cell SC6
+U 1 1 62735AF7
+P 9400 5950
+F 0 "SC6" H 9508 5996 50  0000 L CNN
+F 1 "KXOB081K06TF" H 9508 5905 50  0000 L CNN
+F 2 "SolarPanelBoards:KXOB201K04F-TR" V 9400 6010 50  0001 C CNN
+F 3 "~" V 9400 6010 50  0001 C CNN
+	1    9400 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 9000 6100
+Wire Wire Line
+	9000 6100 9400 6100
+Wire Wire Line
+	9400 6050 9400 6100
+Connection ~ 9400 6100
+Wire Wire Line
+	9400 6100 10300 6100
+Connection ~ 9400 4700
+Wire Wire Line
+	9400 4700 10300 4700
+Wire Wire Line
+	10300 4800 10300 4700
+$Comp
+L Device:D_Schottky D4
+U 1 1 63448D2E
+P 10300 4950
+F 0 "D4" V 10300 5100 50  0000 C CNN
+F 1 "CDBA240LL-HF" V 10400 5600 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 10300 4950 50  0001 C CNN
+F 3 "~" H 10300 4950 50  0001 C CNN
+	1    10300 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D5
+U 1 1 63448D34
+P 10300 5400
+F 0 "D5" V 10300 5550 50  0000 C CNN
+F 1 "CDBA240LL-HF" V 10400 6050 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 10300 5400 50  0001 C CNN
+F 3 "~" H 10300 5400 50  0001 C CNN
+	1    10300 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D6
+U 1 1 63448D3A
+P 10300 5850
+F 0 "D6" V 10300 6000 50  0000 C CNN
+F 1 "CDBA240LL-HF" V 10400 6500 50  0000 R BNN
+F 2 "SolarPanelBoards:DO-214AC" H 10300 5850 50  0001 C CNN
+F 3 "~" H 10300 5850 50  0001 C CNN
+	1    10300 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 5250 7550 5150
+Wire Wire Line
+	7550 5700 7550 5600
+Wire Wire Line
+	8450 5950 8450 6100
+Wire Wire Line
+	8450 5650 8450 5600
+Wire Wire Line
+	8450 5250 8450 5150
+Wire Wire Line
+	9400 5750 9400 5700
+Wire Wire Line
+	9400 5300 9400 5200
+Wire Wire Line
+	10300 5250 10300 5200
+Wire Wire Line
+	10300 6000 10300 6100
+Wire Wire Line
+	10300 5550 10300 5700
+Wire Wire Line
+	9400 5700 10300 5700
+Connection ~ 9400 5700
+Wire Wire Line
+	9400 5700 9400 5600
+Connection ~ 10300 5700
+Wire Wire Line
+	9400 5200 10300 5200
+Connection ~ 9400 5200
+Wire Wire Line
+	9400 5200 9400 5100
+Connection ~ 10300 5200
+Wire Wire Line
+	10300 5200 10300 5100
+Wire Wire Line
+	7550 5600 8450 5600
+Connection ~ 7550 5600
+Wire Wire Line
+	7550 5600 7550 5550
+Connection ~ 8450 5600
+Wire Wire Line
+	8450 5600 8450 5550
+Wire Wire Line
+	7550 5150 8450 5150
+Connection ~ 7550 5150
+Wire Wire Line
+	7550 5150 7550 5100
+Connection ~ 8450 5150
+Wire Wire Line
+	8450 5150 8450 5100
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J2
+U 1 1 6345DB38
+P 10100 1100
+F 0 "J2" H 10150 1517 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 10150 1426 50  0000 C CNN
+F 2 "SolarPanelBoards:M55-7101242R(BottomCap)" H 10100 1100 50  0001 C CNN
+F 3 "~" H 10100 1100 50  0001 C CNN
+	1    10100 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 900  2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	10400 900  10550 900 
+Text GLabel 9750 900  0    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	9900 900  9750 900 
+Wire Wire Line
+	10400 1100 10550 1100
+$Comp
+L power:GND #PWR0101
+U 1 1 6345DB43
+P 10550 1100
+F 0 "#PWR0101" H 10550 850 50  0001 C CNN
+F 1 "GND" H 10555 927 50  0000 C CNN
+F 2 "" H 10550 1100 50  0001 C CNN
+F 3 "" H 10550 1100 50  0001 C CNN
+	1    10550 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 1300 10550 1300
+$Comp
+L power:GND #PWR0102
+U 1 1 6345DB4A
+P 10550 1300
+F 0 "#PWR0102" H 10550 1050 50  0001 C CNN
+F 1 "GND" H 10555 1127 50  0000 C CNN
+F 2 "" H 10550 1300 50  0001 C CNN
+F 3 "" H 10550 1300 50  0001 C CNN
+	1    10550 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 1300 9750 1300
+$Comp
+L power:GND #PWR0103
+U 1 1 6345DB51
+P 9750 1300
+F 0 "#PWR0103" H 9750 1050 50  0001 C CNN
+F 1 "GND" H 9755 1127 50  0000 C CNN
+F 2 "" H 9750 1300 50  0001 C CNN
+F 3 "" H 9750 1300 50  0001 C CNN
+	1    9750 1300
+	0    1    1    0   
+$EndComp
+Text GLabel 9900 1400 0    50   Input ~ 0
+SCL1
+Text GLabel 10400 1400 2    50   Input ~ 0
+SDA1
+$Comp
+L power:GND #PWR0104
+U 1 1 6345DB5B
+P 9750 1100
+F 0 "#PWR0104" H 9750 850 50  0001 C CNN
+F 1 "GND" H 9755 927 50  0000 C CNN
+F 2 "" H 9750 1100 50  0001 C CNN
+F 3 "" H 9750 1100 50  0001 C CNN
+	1    9750 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 1100 9750 1100
+$Comp
+L power:GND #PWR0105
+U 1 1 6345DB62
+P 10550 1000
+F 0 "#PWR0105" H 10550 750 50  0001 C CNN
+F 1 "GND" H 10555 827 50  0000 C CNN
+F 2 "" H 10550 1000 50  0001 C CNN
+F 3 "" H 10550 1000 50  0001 C CNN
+	1    10550 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 1000 10550 1000
+Text GLabel 9750 1000 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	9750 1000 9900 1000
+Wire Wire Line
+	9900 1200 9750 1200
+Wire Wire Line
+	10400 1200 10550 1200
+Text GLabel 9750 1200 0    50   Input ~ 0
++MagX
+Text GLabel 10550 1200 2    50   Input ~ 0
+-MagX
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J3
+U 1 1 634810E0
+P 10100 1950
+F 0 "J3" H 10150 2367 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 10150 2276 50  0000 C CNN
+F 2 "SolarPanelBoards:M55-7101242R(BottomCap)" H 10100 1950 50  0001 C CNN
+F 3 "~" H 10100 1950 50  0001 C CNN
+	1    10100 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 1750 2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	10400 1750 10550 1750
+Text GLabel 9750 1750 0    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	9900 1750 9750 1750
+Wire Wire Line
+	10400 1950 10550 1950
+$Comp
+L power:GND #PWR0114
+U 1 1 634810EB
+P 10550 1950
+F 0 "#PWR0114" H 10550 1700 50  0001 C CNN
+F 1 "GND" H 10555 1777 50  0000 C CNN
+F 2 "" H 10550 1950 50  0001 C CNN
+F 3 "" H 10550 1950 50  0001 C CNN
+	1    10550 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 2150 10550 2150
+$Comp
+L power:GND #PWR0115
+U 1 1 634810F2
+P 10550 2150
+F 0 "#PWR0115" H 10550 1900 50  0001 C CNN
+F 1 "GND" H 10555 1977 50  0000 C CNN
+F 2 "" H 10550 2150 50  0001 C CNN
+F 3 "" H 10550 2150 50  0001 C CNN
+	1    10550 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 2150 9750 2150
+$Comp
+L power:GND #PWR0116
+U 1 1 634810F9
+P 9750 2150
+F 0 "#PWR0116" H 9750 1900 50  0001 C CNN
+F 1 "GND" H 9755 1977 50  0000 C CNN
+F 2 "" H 9750 2150 50  0001 C CNN
+F 3 "" H 9750 2150 50  0001 C CNN
+	1    9750 2150
+	0    1    1    0   
+$EndComp
+Text GLabel 9900 2250 0    50   Input ~ 0
+SCL2
+Text GLabel 10400 2250 2    50   Input ~ 0
+SDA2
+$Comp
+L power:GND #PWR0117
+U 1 1 63481101
+P 9750 1950
+F 0 "#PWR0117" H 9750 1700 50  0001 C CNN
+F 1 "GND" H 9755 1777 50  0000 C CNN
+F 2 "" H 9750 1950 50  0001 C CNN
+F 3 "" H 9750 1950 50  0001 C CNN
+	1    9750 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 1950 9750 1950
+$Comp
+L power:GND #PWR0118
+U 1 1 63481108
+P 10550 1850
+F 0 "#PWR0118" H 10550 1600 50  0001 C CNN
+F 1 "GND" H 10555 1677 50  0000 C CNN
+F 2 "" H 10550 1850 50  0001 C CNN
+F 3 "" H 10550 1850 50  0001 C CNN
+	1    10550 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 1850 10550 1850
+Text GLabel 9750 1850 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	9750 1850 9900 1850
+Wire Wire Line
+	9900 2050 9750 2050
+Wire Wire Line
+	10400 2050 10550 2050
+Text GLabel 9750 2050 0    50   Input ~ 0
++MagY
+Text GLabel 10550 2050 2    50   Input ~ 0
+-MagY
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J4
+U 1 1 63489155
+P 10100 2800
+F 0 "J4" H 10150 3217 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 10150 3126 50  0000 C CNN
+F 2 "SolarPanelBoards:M55-7101242R(BottomCap)" H 10100 2800 50  0001 C CNN
+F 3 "~" H 10100 2800 50  0001 C CNN
+	1    10100 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 2600 2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	10400 2600 10550 2600
+Text GLabel 9750 2600 0    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	9900 2600 9750 2600
+Wire Wire Line
+	10400 2800 10550 2800
+$Comp
+L power:GND #PWR0119
+U 1 1 63489160
+P 10550 2800
+F 0 "#PWR0119" H 10550 2550 50  0001 C CNN
+F 1 "GND" H 10555 2627 50  0000 C CNN
+F 2 "" H 10550 2800 50  0001 C CNN
+F 3 "" H 10550 2800 50  0001 C CNN
+	1    10550 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 3000 10550 3000
+$Comp
+L power:GND #PWR0120
+U 1 1 63489167
+P 10550 3000
+F 0 "#PWR0120" H 10550 2750 50  0001 C CNN
+F 1 "GND" H 10555 2827 50  0000 C CNN
+F 2 "" H 10550 3000 50  0001 C CNN
+F 3 "" H 10550 3000 50  0001 C CNN
+	1    10550 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 3000 9750 3000
+$Comp
+L power:GND #PWR0121
+U 1 1 6348916E
+P 9750 3000
+F 0 "#PWR0121" H 9750 2750 50  0001 C CNN
+F 1 "GND" H 9755 2827 50  0000 C CNN
+F 2 "" H 9750 3000 50  0001 C CNN
+F 3 "" H 9750 3000 50  0001 C CNN
+	1    9750 3000
+	0    1    1    0   
+$EndComp
+Text GLabel 9900 3100 0    50   Input ~ 0
+SCL3
+Text GLabel 10400 3100 2    50   Input ~ 0
+SDA3
+$Comp
+L power:GND #PWR0122
+U 1 1 63489176
+P 9750 2800
+F 0 "#PWR0122" H 9750 2550 50  0001 C CNN
+F 1 "GND" H 9755 2627 50  0000 C CNN
+F 2 "" H 9750 2800 50  0001 C CNN
+F 3 "" H 9750 2800 50  0001 C CNN
+	1    9750 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 2800 9750 2800
+$Comp
+L power:GND #PWR0123
+U 1 1 6348917D
+P 10550 2700
+F 0 "#PWR0123" H 10550 2450 50  0001 C CNN
+F 1 "GND" H 10555 2527 50  0000 C CNN
+F 2 "" H 10550 2700 50  0001 C CNN
+F 3 "" H 10550 2700 50  0001 C CNN
+	1    10550 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 2700 10550 2700
+Text GLabel 9750 2700 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	9750 2700 9900 2700
+Wire Wire Line
+	9900 2900 9750 2900
+Wire Wire Line
+	10400 2900 10550 2900
+Text GLabel 10550 2900 2    50   Input ~ 0
++MagX
+Text GLabel 9750 2900 0    50   Input ~ 0
+-MagX
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J5
+U 1 1 6349057D
+P 10100 3650
+F 0 "J5" H 10150 4067 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 10150 3976 50  0000 C CNN
+F 2 "SolarPanelBoards:M55-7101242R(BottomCap)" H 10100 3650 50  0001 C CNN
+F 3 "~" H 10100 3650 50  0001 C CNN
+	1    10100 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 3450 2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	10400 3450 10550 3450
+Text GLabel 9750 3450 0    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	9900 3450 9750 3450
+Wire Wire Line
+	10400 3650 10550 3650
+$Comp
+L power:GND #PWR0124
+U 1 1 63490588
+P 10550 3650
+F 0 "#PWR0124" H 10550 3400 50  0001 C CNN
+F 1 "GND" H 10555 3477 50  0000 C CNN
+F 2 "" H 10550 3650 50  0001 C CNN
+F 3 "" H 10550 3650 50  0001 C CNN
+	1    10550 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 3850 10550 3850
+$Comp
+L power:GND #PWR0125
+U 1 1 6349058F
+P 10550 3850
+F 0 "#PWR0125" H 10550 3600 50  0001 C CNN
+F 1 "GND" H 10555 3677 50  0000 C CNN
+F 2 "" H 10550 3850 50  0001 C CNN
+F 3 "" H 10550 3850 50  0001 C CNN
+	1    10550 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 3850 9750 3850
+$Comp
+L power:GND #PWR0126
+U 1 1 63490596
+P 9750 3850
+F 0 "#PWR0126" H 9750 3600 50  0001 C CNN
+F 1 "GND" H 9755 3677 50  0000 C CNN
+F 2 "" H 9750 3850 50  0001 C CNN
+F 3 "" H 9750 3850 50  0001 C CNN
+	1    9750 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 9900 3950 0    50   Input ~ 0
+SCL4
+Text GLabel 10400 3950 2    50   Input ~ 0
+SDA4
+$Comp
+L power:GND #PWR0127
+U 1 1 6349059E
+P 9750 3650
+F 0 "#PWR0127" H 9750 3400 50  0001 C CNN
+F 1 "GND" H 9755 3477 50  0000 C CNN
+F 2 "" H 9750 3650 50  0001 C CNN
+F 3 "" H 9750 3650 50  0001 C CNN
+	1    9750 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 3650 9750 3650
+$Comp
+L power:GND #PWR0128
+U 1 1 634905A5
+P 10550 3550
+F 0 "#PWR0128" H 10550 3300 50  0001 C CNN
+F 1 "GND" H 10555 3377 50  0000 C CNN
+F 2 "" H 10550 3550 50  0001 C CNN
+F 3 "" H 10550 3550 50  0001 C CNN
+	1    10550 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 3550 10550 3550
+Text GLabel 9750 3550 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	9750 3550 9900 3550
+Wire Wire Line
+	9900 3750 9750 3750
+Wire Wire Line
+	10400 3750 10550 3750
+Wire Wire Line
+	9000 6350 9000 6100
+Text GLabel 10550 3750 2    50   Input ~ 0
++MagY
+Text GLabel 9750 3750 0    50   Input ~ 0
+-MagY
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J1
+U 1 1 634E00D1
+P 7800 1450
+F 0 "J1" H 7850 1967 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 7850 1876 50  0000 C CNN
+F 2 "SolarPanelBoards:2x08_P1.27mm_Vertical_SMD" H 7800 1450 50  0001 C CNN
+F 3 "~" H 7800 1450 50  0001 C CNN
+	1    7800 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 1150 0    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	7600 1150 7450 1150
+Text GLabel 8250 1150 2    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	8100 1150 8250 1150
+NoConn ~ 8100 1250
+Text GLabel 7450 1350 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	8100 1350 8250 1350
+$Comp
+L power:GND #PWR0130
+U 1 1 63573F1A
+P 8250 1350
+F 0 "#PWR0130" H 8250 1100 50  0001 C CNN
+F 1 "GND" H 8255 1177 50  0000 C CNN
+F 2 "" H 8250 1350 50  0001 C CNN
+F 3 "" H 8250 1350 50  0001 C CNN
+	1    8250 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 1750 8250 1750
+$Comp
+L power:GND #PWR0131
+U 1 1 6357B5E2
+P 8250 1750
+F 0 "#PWR0131" H 8250 1500 50  0001 C CNN
+F 1 "GND" H 8255 1577 50  0000 C CNN
+F 2 "" H 8250 1750 50  0001 C CNN
+F 3 "" H 8250 1750 50  0001 C CNN
+	1    8250 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 1350 7450 1350
+$Comp
+L Interface_Expansion:TCA9548APWR U3
+U 1 1 635D88D6
+P 2400 5950
+F 0 "U3" H 2400 7031 50  0000 C CNN
+F 1 "TCA9548APWR" H 2400 6940 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 2400 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 2450 6200 50  0001 C CNN
+	1    2400 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 1000 0    50   Input ~ 0
++MagZ
+Text GLabel 5850 1000 2    50   Input ~ 0
+-MagZ
+Text GLabel 1850 5250 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	2000 5250 1850 5250
+Text GLabel 1850 5350 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	1850 5350 2000 5350
+Wire Wire Line
+	2850 1550 2850 1400
+Text GLabel 2850 1000 1    50   Input ~ 0
+3V3
+$Comp
+L Device:R_US R3
+U 1 1 63642C2F
+P 2850 1250
+F 0 "R3" H 2918 1296 50  0000 L CNN
+F 1 "10-kOhm" H 2918 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2890 1240 50  0001 C CNN
+F 3 "~" H 2850 1250 50  0001 C CNN
+	1    2850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 63642C35
+P 3400 1250
+F 0 "R4" H 3468 1296 50  0000 L CNN
+F 1 "10-kOhm" H 3468 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3440 1240 50  0001 C CNN
+F 3 "~" H 3400 1250 50  0001 C CNN
+	1    3400 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 1000 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	3400 1100 3400 1000
+Text GLabel 2850 1550 3    50   Input ~ 0
+SCL5
+Text GLabel 3400 1550 3    50   Input ~ 0
+SDA5
+Wire Wire Line
+	2850 1100 2850 1000
+Wire Wire Line
+	3400 1400 3400 1550
+Text GLabel 2400 4800 1    50   Input ~ 0
+3V3
+$Comp
+L Device:C C4
+U 1 1 636A9979
+P 2700 5000
+F 0 "C4" V 2952 5000 50  0000 C CNN
+F 1 "1uF" V 2861 5000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2738 4850 50  0001 C CNN
+F 3 "~" H 2700 5000 50  0001 C CNN
+	1    2700 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 4800 2400 5000
+Wire Wire Line
+	2400 5000 2550 5000
+Connection ~ 2400 5000
+Wire Wire Line
+	2400 5000 2400 5050
+Wire Wire Line
+	3150 5000 3150 5150
+$Comp
+L power:GND #PWR0132
+U 1 1 636BA0EA
+P 3150 5150
+F 0 "#PWR0132" H 3150 4900 50  0001 C CNN
+F 1 "GND" H 3155 4977 50  0000 C CNN
+F 2 "" H 3150 5150 50  0001 C CNN
+F 3 "" H 3150 5150 50  0001 C CNN
+	1    3150 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2000 5750
+NoConn ~ 2800 6250
+NoConn ~ 2800 6350
+NoConn ~ 2800 6450
+NoConn ~ 2800 6550
+NoConn ~ 2800 6650
+NoConn ~ 2800 6750
+$Comp
+L power:GND #PWR0133
+U 1 1 636FA898
+P 2400 7150
+F 0 "#PWR0133" H 2400 6900 50  0001 C CNN
+F 1 "GND" H 2405 6977 50  0000 C CNN
+F 2 "" H 2400 7150 50  0001 C CNN
+F 3 "" H 2400 7150 50  0001 C CNN
+	1    2400 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6950 2400 7150
+Wire Wire Line
+	2000 6250 1900 6250
+Wire Wire Line
+	1900 6250 1900 6350
+Wire Wire Line
+	2000 6450 1900 6450
+Connection ~ 1900 6450
+Wire Wire Line
+	1900 6450 1900 6600
+Wire Wire Line
+	2000 6350 1900 6350
+Connection ~ 1900 6350
+Wire Wire Line
+	1900 6350 1900 6450
+$Comp
+L power:GND #PWR0134
+U 1 1 6372498F
+P 1900 6600
+F 0 "#PWR0134" H 1900 6350 50  0001 C CNN
+F 1 "GND" H 1905 6427 50  0000 C CNN
+F 2 "" H 1900 6600 50  0001 C CNN
+F 3 "" H 1900 6600 50  0001 C CNN
+	1    1900 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 5450 2    50   Input ~ 0
+SCL1
+Wire Wire Line
+	2850 5000 3150 5000
+Text GLabel 2800 5550 2    50   Input ~ 0
+SDA1
+Text GLabel 2800 5650 2    50   Input ~ 0
+SCL2
+Text GLabel 2800 5750 2    50   Input ~ 0
+SDA2
+Text GLabel 2800 5850 2    50   Input ~ 0
+SCL3
+Text GLabel 2800 5950 2    50   Input ~ 0
+SDA3
+Text GLabel 2800 5250 2    50   Input ~ 0
+SCL4
+Text GLabel 2800 5350 2    50   Input ~ 0
+SDA4
+Text GLabel 2800 6050 2    50   Input ~ 0
+SCL5
+Text GLabel 2800 6150 2    50   Input ~ 0
+SDA5
+NoConn ~ 7600 1250
+Wire Wire Line
+	7600 1750 7450 1750
+$Comp
+L power:GND #PWR0129
+U 1 1 6361350D
+P 7450 1750
+F 0 "#PWR0129" H 7450 1500 50  0001 C CNN
+F 1 "GND" H 7455 1577 50  0000 C CNN
+F 2 "" H 7450 1750 50  0001 C CNN
+F 3 "" H 7450 1750 50  0001 C CNN
+	1    7450 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 1850 7450 1850
+Text GLabel 7450 1850 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	8250 1850 8100 1850
+Text GLabel 8250 1850 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	7600 1650 7450 1650
+Text GLabel 7450 1650 0    50   Input ~ 0
++MagZ
+Wire Wire Line
+	7600 1550 7450 1550
+Text GLabel 7450 1550 0    50   Input ~ 0
++MagY
+Text GLabel 7450 1450 0    50   Input ~ 0
++MagX
+Wire Wire Line
+	7600 1450 7450 1450
+Wire Wire Line
+	8100 1650 8250 1650
+Text GLabel 8250 1650 2    50   Input ~ 0
+-MagZ
+Wire Wire Line
+	8100 1550 8250 1550
+Text GLabel 8250 1550 2    50   Input ~ 0
+-MagY
+Wire Wire Line
+	8100 1450 8250 1450
+Text GLabel 8250 1450 2    50   Input ~ 0
+-MagX
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 63770665
+P 4500 5350
+F 0 "J7" H 4418 5025 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 4418 5116 50  0000 C CNN
+F 2 "SolarPanelBoards:ScrewTerminal" H 4500 5350 50  0001 C CNN
+F 3 "~" H 4500 5350 50  0001 C CNN
+	1    4500 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 637846CF
+P 5300 5250
+F 0 "J6" H 5380 5242 50  0000 L CNN
+F 1 "Conn_01x02" H 5380 5151 50  0000 L CNN
+F 2 "SolarPanelBoards:JSTB2B-ZRLFSN" H 5300 5250 50  0001 C CNN
+F 3 "~" H 5300 5250 50  0001 C CNN
+	1    5300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5250 4700 5250
+Wire Wire Line
+	5100 5350 4700 5350
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 63797C81
+P 4150 5250
+F 0 "J8" H 4100 5050 50  0000 L CNN
+F 1 "BurnWireHoles" H 3900 4950 50  0000 L CNN
+F 2 "SolarPanelBoards:BurnWireHoles" H 4150 5250 50  0001 C CNN
+F 3 "~" H 4150 5250 50  0001 C CNN
+	1    4150 5250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 5250
+NoConn ~ 3950 5350
+$EndSCHEMATC

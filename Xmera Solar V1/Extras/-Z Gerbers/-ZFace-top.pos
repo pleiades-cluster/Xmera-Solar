@@ -1,0 +1,11 @@
+### Module positions - created on 11/13/22 15:12:59 ###
+### Printed by Pcbnew version kicad (5.1.10)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                  Package                          PosX       PosY       Rot  Side
+C4        1uF                  C_0805_2012Metric            129.9500   -81.5500  270.0000  top
+J1        Conn_02x08_Odd_Even  2x08_P1.27mm_Vertical_SMD    115.8000   -82.0000  180.0000  top
+R1        10-kOhm              R_0603_1608Metric            125.6500   -78.4250   90.0000  top
+R2        10-kOhm              R_0603_1608Metric            127.2500   -79.2500   90.0000  top
+U3        TCA9548APWR          TSSOP-24_4.4x7.8mm_P0.65mm   132.1000   -75.5000  180.0000  top
+## End
